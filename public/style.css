@@ -1,0 +1,252 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	background-color: #DCDCDC;
+}
+.header{
+	height: 90vh;
+	background-position: top;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to right bottom
+	 ,rgba(0,0, 0,0.6),rgba(0,0,0,0.6)),
+	url('./mg/1 (5).jpg');
+	align-content: center;
+	
+	}
+	.header .container{
+		position: absolute;
+		top: 85%;
+		left: 10%;
+	}
+	.header .pin{
+		height: 60px;
+	    width:60px;
+	    position: absolute;
+		top: 5%;
+		left: 10%;
+
+	}
+.header img{
+	height: 150px;
+	width:250px;
+	padding: 20px ;
+	background-color: #fff;
+
+	}
+	
+	.row{
+		margin-left: auto;
+		margin-right: auto;
+		width:100%;
+	}
+	.footer{
+		color: brown;
+		font-family: sans-serif;
+		text-align: center;
+		font-weight: 700;
+		font-size: 14px;
+
+	}
+nav{
+	height: 10vh;
+	font-weight: 700;
+	background: #5b78c7;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+
+}
+.nav-links{
+	display: flex;
+	list-style: none;
+	width:50%;
+	height: 100%;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: auto;
+}
+.nav-links li a{
+	text-decoration: none;
+	color: #fff;
+}
+.about h4{
+	color: brown;
+	font-weight: 700;
+	text-align: left;
+	font-size: 26px;
+	margin: 0px 20px 20px 20px;
+}
+.listings .btn{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+}
+.about{
+	margin-top: 130px;
+	background-color: #fff;
+	padding: 20px;
+	position:relative;
+}
+.about h5{
+	color:  #ffffff00;
+	font-weight: 700;
+	text-align: left;
+	font-size: 16px;
+	margin: 10px;
+	position:absolute;
+	top: 40%;
+	left: 40%;
+	height: 100%;
+	transform: translate(-40%,-40%);
+}
+.about .in:hover{
+	opacity: 0.8;
+
+	}
+	.fa{
+		font-size: 30px;
+		color: blue;
+		margin: 5px;
+	}
+.about h5:hover{
+	color: brown;
+	font-weight: 700;
+	text-align: left;
+	font-size: 16px;
+	margin: 10px;
+	position:absolute;
+	top: 40%;
+	left: 40%;
+	height: auto;
+	background-color: #fff;
+	padding: 10px;
+	transform: translate(-40%,-40%);
+}	
+.about .in{
+	padding: 10px;
+	border: 0.5px solid #000;
+	text-align: center;
+	border-radius: 5px;
+}
+.about img{
+	height: 180px;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.listings{
+	background-color: #fff;
+	padding: 10px;
+	margin-top: 15px;
+}
+.listings h4{
+	color: brown;
+	font-weight: 700;
+	text-align: left;
+	font-size: 26px;
+	margin: 20px;
+}
+.in h4{
+	color: brown;
+	font-weight: 700;
+	text-align: left;
+	font-size: 26px;
+	margin: 05px 20px 05px 20px;
+}
+.text-box {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%, -10%); ;
+	color: #fff;
+	
+}
+.text-box h3{
+	font-weight: 700;
+	font-size: 30px;
+	}
+	.text-box h6{
+	font-weight: 500;
+	color: #fff;
+	font-size: 20px;
+	}
+.footers{
+	background-color: #000;
+	padding: 20px;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+.listings .btn-default{
+	float : right;
+	margin-top: 5%;
+}
+.listings h5{
+	color: brown;
+	font-weight: 700;
+	text-align: left;
+	font-size: 16px;
+	margin: 05px 10px 05px 10px;
+	padding: 0px 10px 0px 10px;
+}
+
+.listings .in{
+	padding: 5px;
+	border: 0.5px solid #000;
+	text-align: center;
+	border-radius: 5px;
+}
+.listings img{
+	height: 180px;
+	width: 100%;
+	margin-bottom: 2px;
+	border-radius: 5px;
+}
+.listings p{
+text-align: left;
+font-size: 12px;
+font-weight: 700;
+padding: 0px 20px 0px 20px;
+}
+@media screen and (max-width: 768px){
+	.line{
+		width:30px;
+		height: 3px;
+		background:#fff;
+		margin: 5px;
+	}
+	.hamberger{
+		position:absolute;
+		right: 5%;
+		top:50%;
+		transform:translate(-5%,-50%);
+		z-index: 2;
+
+	}
+	nav{
+		position:relative;
+	}
+	
+	.nav-links{
+		position: fixed;
+		height: 100vh;
+		background:#5b78c7;
+		width:100%;
+		flex-direction: column;
+		clip-path: circle(100px  at 90% -15%);
+		-webkit-clip-path: circle(100px  at 90% -15%);
+		transition: all 1s ease-out; 
+	}
+	.nav-links.open{
+		clip-path: circle(1000px  at 90% -10%);
+		-webkit-clip-path:circle(1000px  at 90% -10%);
+
+	}
+
+}
