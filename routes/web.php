@@ -13,10 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
+
 Route::get('/','PagesController@index') ;
 
-=======
 
-});
->>>>>>> 82779ce3780933167248a7d80aba91c729bdd831
